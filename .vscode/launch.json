@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run CodeClone Extension",
+      "type": "extensionHost",
+      "request": "launch",
+      "preLaunchTask": "Build CodeClone Extension",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}"
+      ]
+    }
+  ]
+}
