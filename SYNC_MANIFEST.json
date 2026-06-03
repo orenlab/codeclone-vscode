@@ -1,14 +1,15 @@
 {
   "codeclone_version": "2.1.0a1",
-  "files_copied": 43,
-  "files_deleted": 44,
+  "files_copied": 44,
+  "files_deleted": 45,
   "source_commit": "0dc553d",
   "source_commit_full": "0dc553dbdf6f35223e9e03253e79227b7ea3d022",
-  "source_dirty": false,
+  "source_dirty": true,
   "source_paths": [
-    "extensions/vscode-codeclone"
+    "extensions/vscode-codeclone",
+    "scripts/integration_dist/gitignore.vscode"
   ],
   "source_repository": "orenlab/codeclone",
-  "synced_at_utc": "2026-06-03T13:23:19+00:00",
+  "synced_at_utc": "2026-06-03T13:33:38+00:00",
   "target": "vscode"
 }
