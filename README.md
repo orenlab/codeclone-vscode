@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/github/license/orenlab/codeclone?style=flat-square&color=6366f1)](LICENSE)
 [![Requires CodeClone](https://img.shields.io/badge/requires-codeclone_%3E%3D2.0.0-6366f1?style=flat-square)](https://orenlab.github.io/codeclone/)
 
-Native VS Code surface for [codeclone-mcp](https://orenlab.github.io/codeclone/mcp/) —
+Native VS Code surface for [codeclone-mcp](https://orenlab.github.io/codeclone/guide/mcp/) —
 **Structural Change Controller for AI-assisted Python development**. Brings
 baseline-aware structural analysis into the editor — triage-first, repository
 read-only, and driven by the same canonical report as the CLI and HTML output. Session tools (`mark_finding_reviewed`, `clear_session_runs`) update
@@ -25,6 +25,8 @@ artifacts.
   impact for the active file; `Copy Blast Radius Brief` puts a Markdown summary on the clipboard
 - **Session & audit insights** — `Show Session Stats` and `Show Controller Audit Trail` mirror
   CLI `--session-stats` and `--audit` in read-only webviews (IDE-only MCP tools, not exposed to agents)
+- **Trajectory passports** — dashboard and detail views expose quality,
+  complexity, anomalies, Patch Trail evidence, and agent aggregates
 - **Coverage Join** — integrates `coverage.xml` to surface untested hotspots when available
 - **Source-first navigation** — `Reveal Source` opens the exact location; `Next / Previous Hotspot`
   steps through active targets in the editor
@@ -151,9 +153,17 @@ is separate so the tree stays focused on human review work:
   (mode=for_path)
 - **Open Memory Search Panel** — read-only results webview (CSP, no scripts,
   allowlisted `command:` links to open a record)
+- **Show Trajectory Dashboard** — status, agent/outcome aggregates, anomalies,
+  and recent trajectories
+- **Show Trajectory Detail** — quality passport, complexity factors, Patch
+  Trail, contract gates, incidents, steps, and evidence
+- **Copy Trajectory Dashboard Brief** — Markdown summary for review notes
 
 Use **Configure Memory Search** to adjust semantic recall, drafts/stale filters,
 and result limits per workspace.
+
+Trajectory views are read-only projections from
+`query_engineering_memory`; they do not create IDE-local workflow truth.
 
 ---
 
@@ -241,8 +251,8 @@ full analysis and MCP are disabled until workspace trust is granted.
 ## Documentation
 
 - [CodeClone documentation](https://orenlab.github.io/codeclone/)
-- [MCP usage guide](https://orenlab.github.io/codeclone/mcp/)
-- [MCP interface contract](https://orenlab.github.io/codeclone/book/20-mcp-interface/)
+- [MCP usage guide](https://orenlab.github.io/codeclone/guide/mcp/)
+- [MCP interface contract](https://orenlab.github.io/codeclone/book/25-mcp-interface/)
 
 ---
 
